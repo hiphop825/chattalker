@@ -235,6 +235,8 @@ body .bt {
 
 .actor ul li {
   padding-bottom: 20px;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
 }
 
 .actor ul li img {
@@ -301,8 +303,8 @@ body .bt {
 .guild ul li {
   width: 230px;
   height: 280px;
-  -webkit-box-shadow: 0px 0px 5px 0px gray;
-          box-shadow: 0px 0px 5px 0px gray;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
   margin-bottom: 28px;
   padding-top: 32px;
   padding-left: 32px;
@@ -325,7 +327,7 @@ body .bt {
 }
 
 .card {
-  margin: 0 auto;
+  margin: auto;
   max-width: 1088px;
 }
 
@@ -342,26 +344,39 @@ body .bt {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-top: 104px;
 }
 
 .card ul li {
   width: 325px;
+  position: relative;
   margin-bottom: 24px;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
 }
 
 .card ul li img {
   display: block;
+  position: absolute;
+  top: -60px;
+  left: 16px;
 }
 
 .card ul li p {
   font-size: 16px;
   line-height: 35px;
   font-weight: bold;
+  margin-top: 24px;
+  margin-left: 32px;
 }
 
-.card ul li a {
+.card ul li .opinion {
+  display: block;
   font-size: 16px;
   line-height: 24px;
+  margin: 48px 32px 0;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #DDDDDD;
 }
 
 .card ul li .star {
@@ -371,6 +386,8 @@ body .bt {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0;
+  margin: 0px 32px 24px;
 }
 
 footer {
