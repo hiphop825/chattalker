@@ -112,6 +112,7 @@ body h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
   margin: 0 auto;
   margin-bottom: 92px;
   -webkit-box-align: center;
@@ -128,6 +129,17 @@ body h4 {
 .navbar .navbt {
   margin: 24px 0 24px 24px;
   background-color: #FF5D50;
+}
+
+.navbar .bg {
+  width: 1366px;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #F7F9FD;
+  border-radius: 0 0 0 300px;
+  z-index: -2;
 }
 
 .method {

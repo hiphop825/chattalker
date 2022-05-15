@@ -57,6 +57,7 @@ body{
 .navbar{
     display: flex;
     justify-content: space-between;
+    position: relative;
     margin: 0 auto;
     margin-bottom: 92px;
     align-items: center;
@@ -71,13 +72,23 @@ body{
         margin: 24px 0 24px 24px;
         background-color: #FF5D50;
     }
+
+    .bg{
+        width: 1366px;
+        height: 470px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #F7F9FD;
+        border-radius: 0 0 0 300px;
+        z-index: -2;
+    }
 }
 
 .method{
     margin: auto;
     max-width: 1085px;
     margin-bottom: 280px;
-
     h2{
         margin-bottom: 16px;
     }
