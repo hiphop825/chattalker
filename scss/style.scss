@@ -32,20 +32,33 @@ body{
     margin: 0 auto;
     max-width: 1366px;
     position: relative;
+    overflow: hidden;
 
     .bgimg{
         position: absolute;
         z-index: -1;
     }
 
-    .yw{
+    .r-0{
         right: 0;
     }
 
-    .ball{
+    .l250-t600{
         left: -250px;
         top: 600px;
     }
+
+    .r100-t1740{
+        right: -100px;
+        top:1740px
+    }
+
+    .l100-t1740{
+        left: 80px;
+        top:2780px
+    }
+
+
 }
 
 .navbar{
@@ -158,6 +171,7 @@ body{
         justify-content: space-around;
         
         li{
+            background-color: #fff;
             padding-bottom: 20px;
             box-shadow: 0px 2px 10px 0px rgba(#000000,0.08);
             img{
@@ -260,8 +274,9 @@ body{
         li{
             width: 325px;
             position: relative;
-            margin-bottom: 24px;
+            margin-bottom: 100px;
             box-shadow: 0px 2px 10px 0px rgba(#000000,0.08);
+            background-color: #fff;
             img{
                 display:block;
                 position: absolute;
@@ -296,7 +311,7 @@ body{
 }
 
 footer{
-    margin-top: 100px;
+
     position: relative;
     text-align: center;
     
