@@ -52,6 +52,13 @@ table {
   border-spacing: 0;
 }
 
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .button {
   width: 128px;
   height: 40px;
@@ -125,12 +132,12 @@ body .bt {
 }
 
 .navbar .logo {
-  margin: 24px;
+  margin: 24px 0 24px 24px;
   width: 218px;
 }
 
 .navbar .navbt {
-  margin: 24px;
+  margin: 24px 24px 24px 0px;
   background-color: #FF5D50;
 }
 
@@ -221,7 +228,7 @@ body .bt {
   max-width: 1088px;
   margin: 0 auto;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .actor h3 {
@@ -247,6 +254,7 @@ body .bt {
 .actor ul li {
   background-color: #fff;
   padding-bottom: 20px;
+  margin-bottom: 30px;
   -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
 }
@@ -288,9 +296,8 @@ body .bt {
       -ms-flex-align: center;
           align-items: center;
   max-width: 1085px;
-  margin: 0% auto;
-  margin-top: 80px;
-  margin-bottom: 100px;
+  margin: auto;
+  margin-bottom: 72px;
 }
 
 .guild p {
@@ -409,31 +416,68 @@ footer {
 }
 
 footer img {
+  display: block;
+  position: absolute;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: -1;
 }
 
 footer h3 {
-  margin-top: 230;
-}
-
-footer div {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  padding-top: 230px;
+  margin-bottom: 48px;
 }
 
 footer div P {
   margin: auto;
-  margin-top: 48px;
 }
 
 footer .ft {
-  margin: 0;
+  margin-top: 100px;
   padding: 16px;
   background-color: #F5F5F5;
+}
+
+@media screen and (max-width: 375px) {
+  .wrap .bg {
+    display: none;
+  }
+  .navbar .logo {
+    margin: 24px 0 24px 20px;
+    width: 218px;
+  }
+  .navbar .navbt {
+    margin: 24px 20px 24px 0px;
+    background-color: #FF5D50;
+  }
+  .banner {
+    margin: 0 20px 0 20px;
+  }
+  .banner ul li h2 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  .guild {
+    text-align: center;
+    margin: 0 20px 0 20px;
+  }
+  .guild h3 {
+    margin-bottom: 16px;
+  }
+  .guild .button {
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .guild ul li {
+    margin: 0 auto;
+    margin-bottom: 24px;
+    padding-top: 32px;
+    padding-left: 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
