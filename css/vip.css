@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.button {
+  width: 128px;
+  height: 40px;
+  border-radius: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.button a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+body h2 {
+  font-size: 48px;
+}
+
+body h3 {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: bold;
+}
+
+body h4 {
+  font-size: 24px;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1366px;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrap .bgimg {
+  position: absolute;
+  z-index: -1;
+}
+
+.wrap .r-0 {
+  right: 0;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 92px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1085px;
+}
+
+.navbar .logo {
+  margin: 24px 24px 24px 0px;
+  width: 218px;
+}
+
+.navbar .navbt {
+  margin: 24px 0 24px 24px;
+  background-color: #FF5D50;
+}
+
+.method {
+  margin: auto;
+  max-width: 1085px;
+  margin-bottom: 280px;
+}
+
+.method h2 {
+  margin-bottom: 16px;
+}
+
+.cash {
+  max-width: 909px;
+  margin: auto;
+  text-align: center;
+}
+
+.cash h3 {
+  margin-bottom: 48px;
+}
+
+.cash .lv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cash .lv li {
+  margin-bottom: 54px;
+}
+
+.cash .lv li .bt {
+  border: 1px solid #56c4c5;
+}
+
+.cash .lv li .bt a {
+  color: #56C4C5;
+}
+
+.cash .lv li .bt:hover {
+  background-color: #56C4C5;
+}
+
+.cash .lv li .bt:hover a {
+  color: #fff;
+}
+
+.cash .card {
+  margin: auto;
+}
+
+.cash .card .candyfather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cash .card .candyfather .both {
+  padding: 29px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 94px;
+  margin-right: 8px;
+}
+
+.cash .card .candyfather .both h4 {
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.cash .card .candyfather .both .calculate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.cash .card .candyfather .both .calculate a {
+  font-size: 12px;
+}
+
+.cash .card .candyfather .both .calculate h3 {
+  color: #56C4C5;
+  margin-bottom: 0px;
+}
+
+.cash .card .candyfather .both .calculate .equal {
+  font-size: 29px;
+  margin: 0 21px 0 17px;
+}
+
+.cash .card .candyfather .both .calculate .ca {
+  padding: 20px;
+  background-color: #F5F5F5;
+  border-radius: 20px;
+}
+
+.cash .card .candyfather .both ul {
+  text-align: left;
+}
+
+.cash .card .candyfather .both ul li {
+  margin-bottom: 16px;
+}
+
+.cash .card .candyfather .both ul li a {
+  color: #c79201;
+  border: 1px solid #c79201;
+  margin-right: 10px;
+}
+
+.cash .card .candyfather .both .btx {
+  margin: auto;
+  margin-top: 42px;
+  margin-bottom: 38px;
+  background-color: #56c4c5;
+}
+
+.question {
+  max-width: 904px;
+  margin: auto;
+  text-align: center;
+}
+
+.question ul {
+  text-align: left;
+}
+
+.question ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+
+.question ul li span {
+  color: #56c4c5;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer .ft {
+  margin-top: 100px;
+  padding: 16px;
+  background-color: #F5F5F5;
+}
+
+@media screen and (max-width: 375px) {
+  body h2 {
+    font-size: 32px;
+  }
+  body h3 {
+    font-size: 28px;
+  }
+}
+/*# sourceMappingURL=vip.css.map */

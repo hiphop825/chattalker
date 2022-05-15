@@ -75,6 +75,10 @@ table {
   color: #fff;
 }
 
+body h2 {
+  font-size: 48px;
+}
+
 body h3 {
   font-size: 32px;
   line-height: 46px;
@@ -132,12 +136,12 @@ body .bt {
 }
 
 .navbar .logo {
-  margin: 24px 0 24px 24px;
+  margin: 24px 24px 24px 0px;
   width: 218px;
 }
 
 .navbar .navbt {
-  margin: 24px 24px 24px 0px;
+  margin: 24px 0 24px 24px;
   background-color: #FF5D50;
 }
 
@@ -327,6 +331,13 @@ body .bt {
   margin-bottom: 28px;
   padding-top: 32px;
   padding-left: 32px;
+}
+
+.guild ul li img {
+  border-radius: 50px;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.08);
+  padding: 10px;
 }
 
 .guild ul li a {
