@@ -1,0 +1,258 @@
+
+.wrap{
+    padding: 0 20px;
+    max-width: 1366px;
+}
+
+//navbar
+.navbar{
+    .logo{
+        margin: 24px 24px 24px 0px;
+        width: 218px;
+    }
+    
+    .navbt{
+        margin: 24px 0 24px 24px;
+        background-color: #FF5D50;
+        a{
+            line-height: 40px;
+        }
+    }
+}
+
+.banner{
+    margin-bottom: 180px;
+    position: relative;
+
+    .bannerbg-img{
+        position: relative;
+        img{
+            max-width: 100%;
+        }
+        .bannerbgimg{
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+        }
+    }
+}
+
+.platform{
+    max-width: 969px;
+    ul{
+        margin-left: -10px;
+        margin-right: -10px;
+        li{
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 33%;
+            margin-bottom: 100px;
+            p{
+                margin: 24px 0;
+            }
+        }
+    }
+}
+
+.actor{
+    margin-bottom: 70px;
+    P{
+        margin: 16px 20px 48px;
+    }
+    ul{        
+        li{
+            width: 24%;
+            padding: 8px;
+            padding-bottom: 20px;
+            img{
+                width: 100%;
+            }
+            p{
+                margin: 16px 0;
+            }
+        }
+    }
+}
+
+.guild{
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-bottom: 72px;
+    ul{
+        max-width: 63%;
+        padding: 10px;
+        li{
+            width: 40%;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 28px;
+            padding: 32px;
+            margin-right: 48px;
+
+            img{
+                padding: 10px;
+            }
+            P{
+                margin-top: 24px;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+.card{
+    ul{
+        margin-top: 104px;
+        
+        li{
+            width: 30%;
+            margin-bottom: 100px;
+            img{
+                top: -60px;
+                left: 16px;
+            }
+            p{
+                margin-top: 24px;
+                margin-left: 32px;
+            }
+            .opinion{
+                margin: 48px 32px 0;
+                padding-bottom: 24px;
+                border-bottom: 2px solid #DDDDDD;
+            }
+
+            .star{
+                padding: 24px 32px;
+            }
+        }
+    }
+}
+
+footer{
+    background-image: url(../img/bg.png);
+    background-position: center;
+
+    .ftsummary{
+        h3{
+            padding-top: 260px;
+            margin-bottom: 48px;
+        }
+    }
+
+    .ft{
+        margin-top: 100px;
+        padding: 16px;
+        background-color: #F5F5F5;
+        text-align: center;
+    }
+}
+
+//vip.htm
+.method{
+    margin-bottom: 280px;
+}
+
+.cash{
+    .num-people{
+        ul{
+            li{
+                margin: 8px;
+            }
+        }
+    }
+}
+
+.vipcard{
+    .candyfather{
+        .both{
+            width: 45%;
+            padding: 29px;
+            border: 1px solid rgba(#000,0.08);
+            margin-bottom: 94px;
+            margin-right: 8px;
+            background-color: #fff;
+
+            h4{
+                padding-bottom: 16px;
+                margin-bottom: 32px;
+                border-bottom: 1px solid #DDDDDD;
+            }
+            .calculate{
+                margin-top: 32px;
+                margin-bottom: 32px;
+
+                .equal{
+                    margin: 0 21px 0 17px;
+                }
+
+                .ca{
+                    padding: 20px;
+                    background-color: #F5F5F5;
+                    border-radius: 20px;
+                }
+            }
+            
+            .submenu{
+                a{
+                    text-align: left;
+                    margin-right: 10px;
+                    padding: 10px 0;
+                    img{
+                        padding-right: 13px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            .btx{
+                margin: auto;
+                margin-top: 42px;
+                margin-bottom: 38px;
+                background-color: #56c4c5;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+
+.question{
+    max-width: 904px;
+    ul{
+        li{
+            padding: 10px 16px;
+            border: 1px solid rgba(#000,0.08);
+
+            .ans{
+                display: inline;
+                height: 0px;
+                text-align: left;
+
+                a{
+                    height: 0;
+                    display: none;
+                }
+            }
+
+            &:hover{
+                p{
+                    color: #56c4c5;
+                }
+                .ans{
+                    display: block;
+                    height: 100px;
+                    padding: 10px 10px 10px 0;
+                    margin: 14px 0;
+                    transition: 2.5s;
+                    a{
+                        display: block;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
