@@ -1,0 +1,768 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.max-w1085 {
+  max-width: 1085px;
+}
+
+.mg-auto {
+  margin: 0 auto;
+}
+
+.mg-button16 {
+  margin-bottom: 16px;
+}
+
+.mg-button20 {
+  margin-bottom: 20px;
+}
+
+.mg-button24 {
+  margin-bottom: 24px;
+}
+
+.mg-button30 {
+  margin-bottom: 30px;
+}
+
+.mg-button48 {
+  margin-bottom: 48px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fd-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fw-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.jc-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jc-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jc-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ai-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.button {
+  width: 128px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.bt {
+  background-color: #56C4C5;
+}
+
+.bt:hover {
+  background-color: #fff;
+  border: 1px solid #56c4c5;
+}
+
+.bttext {
+  line-height: 40px;
+  padding: 5px 0;
+}
+
+.bttext:hover {
+  color: #56C4C5;
+}
+
+.regular12 {
+  font-family: 'Noto Sans TC';
+  font-weight: 400;
+  font-size: 12px;
+  color: #221e1f;
+  line-height: 17px;
+}
+
+.bold32, h3 {
+  font-family: 'Noto Sans TC';
+  font-weight: 700;
+  font-size: 32px;
+  color: #221e1f;
+  line-height: 46px;
+}
+
+.regular18, .regular18-w {
+  font-family: 'Noto Sans TC';
+  font-weight: 400;
+  font-size: 18px;
+  color: #221e1f;
+  line-height: 26px;
+}
+
+.bold18, .bold18-b {
+  font-family: 'Noto Sans TC';
+  font-weight: 700;
+  font-size: 18px;
+  color: #221e1f;
+  line-height: 26px;
+}
+
+.regular16, .regular16-g, .regular16-w {
+  font-family: 'Noto Sans TC';
+  font-weight: 400;
+  font-size: 16px;
+  color: #221e1f;
+  line-height: 24px;
+}
+
+.regular20 {
+  font-family: 'Noto Sans TC';
+  font-weight: 400;
+  font-size: 16px;
+  color: #221e1f;
+  line-height: 29px;
+}
+
+.bold16, .bold16-b {
+  font-family: 'Noto Sans TC';
+  font-weight: 700;
+  font-size: 16px;
+  color: #221e1f;
+  line-height: 24px;
+}
+
+.bold24 {
+  font-family: 'Noto Sans TC';
+  font-weight: 700;
+  font-size: 24px;
+  color: #221e1f;
+  line-height: 35px;
+}
+
+.regular16-g {
+  color: #747474;
+}
+
+.bold48, h2 {
+  font-family: 'Noto Sans TC';
+  font-weight: 700;
+  font-size: 48px;
+  color: #221e1f;
+  line-height: 70px;
+}
+
+.bold18-b {
+  color: #56c4c5;
+}
+
+.regular18-w {
+  color: #ffffff;
+}
+
+.bold16-b {
+  color: #56c4c5;
+}
+
+.regular16-w {
+  color: #fff;
+}
+
+.color-b {
+  color: #56c4c5;
+}
+
+.block {
+  display: block;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.bx-shadow {
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+.b-radius20 {
+  border-radius: 20px;
+}
+
+.b-radius50 {
+  border-radius: 50px;
+}
+
+.bgcolor-w {
+  background-color: #fff;
+}
+
+.navbgimg {
+  background: url(../img/bg_yellow.png) no-repeat;
+  width: 850px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -5;
+}
+
+.ball-1 {
+  width: 100%;
+}
+
+.ball-1::after {
+  content: "";
+  background: url(../img/Ellipse3.png) right;
+  width: 138px;
+  height: 360px;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  z-index: -5;
+}
+
+.ball-2 {
+  width: 100%;
+}
+
+.ball-2::before {
+  content: "";
+  background: url(../img/Ellipse18.png) left;
+  width: 210px;
+  height: 310px;
+  position: absolute;
+  right: 0;
+  z-index: -5;
+}
+
+.ball-3 {
+  width: 100%;
+}
+
+.ball-3 .ball {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 250px;
+  z-index: -5;
+}
+
+.ball-4 {
+  width: 100%;
+}
+
+.ball-4::after {
+  content: "";
+  background: url(../img/Ellipse3.svg) right;
+  width: 94px;
+  height: 360px;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  z-index: -5;
+}
+
+.top-ball .top {
+  position: fixed;
+  right: 100px;
+  z-index: 100;
+  bottom: 100px;
+}
+
+.vipbgimg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -5;
+}
+
+.bg {
+  width: 100%;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #F7F9FD;
+  border-radius: 0 0 0 300px;
+  z-index: -10;
+}
+
+.wrap {
+  padding: 0 20px;
+  max-width: 1366px;
+}
+
+.navbar .logo {
+  margin: 24px 24px 24px 0px;
+  width: 218px;
+}
+
+.navbar .navbt {
+  margin: 24px 0 24px 24px;
+  background-color: #FF5D50;
+}
+
+.navbar .navbt a {
+  line-height: 40px;
+}
+
+.banner {
+  margin-bottom: 180px;
+  position: relative;
+}
+
+.banner .bannerbg-img {
+  position: relative;
+}
+
+.banner .bannerbg-img img {
+  max-width: 100%;
+}
+
+.banner .bannerbg-img .bannerbgimg {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.platform {
+  max-width: 969px;
+}
+
+.platform ul {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.platform ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 33%;
+  margin-bottom: 100px;
+}
+
+.platform ul li p {
+  margin: 24px 0;
+}
+
+.actor {
+  margin-bottom: 70px;
+}
+
+.actor P {
+  margin: 16px 20px 48px;
+}
+
+.actor ul li {
+  width: 24%;
+  padding: 8px;
+  padding-bottom: 20px;
+}
+
+.actor ul li img {
+  width: 100%;
+}
+
+.actor ul li p {
+  margin: 16px 0;
+}
+
+.guild {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-bottom: 72px;
+}
+
+.guild ul {
+  max-width: 63%;
+  padding: 10px;
+}
+
+.guild ul li {
+  width: 40%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 28px;
+  padding: 32px;
+  margin-right: 48px;
+}
+
+.guild ul li img {
+  padding: 10px;
+}
+
+.guild ul li P {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.card ul {
+  margin-top: 104px;
+}
+
+.card ul li {
+  width: 30%;
+  margin-bottom: 100px;
+}
+
+.card ul li img {
+  top: -60px;
+  left: 16px;
+}
+
+.card ul li p {
+  margin-top: 24px;
+  margin-left: 32px;
+}
+
+.card ul li .opinion {
+  margin: 48px 32px 0;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #DDDDDD;
+}
+
+.card ul li .star {
+  padding: 24px 32px;
+}
+
+footer {
+  background-image: url(../img/bg.png);
+  background-position: center;
+}
+
+footer .ftsummary h3 {
+  padding-top: 260px;
+  margin-bottom: 48px;
+}
+
+footer .ft {
+  margin-top: 100px;
+  padding: 16px;
+  background-color: #F5F5F5;
+  text-align: center;
+}
+
+.method {
+  margin-bottom: 280px;
+}
+
+.cash .num-people ul li {
+  margin: 8px;
+}
+
+.vipcard .candyfather .both {
+  width: 45%;
+  padding: 29px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 94px;
+  margin-right: 8px;
+  background-color: #fff;
+}
+
+.vipcard .candyfather .both h4 {
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.vipcard .candyfather .both .calculate {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.vipcard .candyfather .both .calculate .equal {
+  margin: 0 21px 0 17px;
+}
+
+.vipcard .candyfather .both .calculate .ca {
+  padding: 20px;
+  background-color: #F5F5F5;
+  border-radius: 20px;
+}
+
+.vipcard .candyfather .both .submenu a {
+  text-align: left;
+  margin-right: 10px;
+  padding: 10px 0;
+}
+
+.vipcard .candyfather .both .submenu a img {
+  padding-right: 13px;
+  vertical-align: middle;
+}
+
+.vipcard .candyfather .both .btx {
+  margin: auto;
+  margin-top: 42px;
+  margin-bottom: 38px;
+  background-color: #56c4c5;
+  line-height: 40px;
+}
+
+.question {
+  max-width: 904px;
+}
+
+.question ul li {
+  padding: 10px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.question ul li .ans {
+  display: inline;
+  height: 0px;
+  text-align: left;
+}
+
+.question ul li .ans a {
+  height: 0;
+  display: none;
+}
+
+.question ul li:hover p {
+  color: #56c4c5;
+}
+
+.question ul li:hover .ans {
+  display: block;
+  height: 100px;
+  padding: 10px 10px 10px 0;
+  margin: 14px 0;
+  -webkit-transition: 2.5s;
+  transition: 2.5s;
+}
+
+.question ul li:hover .ans a {
+  display: block;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1280px) {
+  .guild {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .guild .guildmsg {
+    text-align: center;
+  }
+  .guild .button {
+    margin: auto;
+  }
+  .guild ul {
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .guild ul li {
+    width: 45%;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .actor ul li {
+    width: 50%;
+  }
+  .vipcard .candyfather .both {
+    width: 100%;
+  }
+  .vipcard .candyfather .both .submenu {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbgimg {
+    display: none;
+  }
+  .banner .bannerbg-img .bannerbgimg {
+    display: block;
+  }
+  .platform ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .platform ul li {
+    width: 80%;
+  }
+  .guild .button {
+    margin: auto;
+  }
+  .guild ul li {
+    width: 100%;
+  }
+  .card ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .card ul li {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  .bold32, h3 {
+    font-size: 28px;
+  }
+  .regular18, .regular18-w {
+    font-size: 16px;
+  }
+  .bold18, .bold18-b {
+    font-size: 16px;
+  }
+  .regular20 {
+    font-size: 16px;
+  }
+  .bold24 {
+    font-size: 18px;
+  }
+  .bold48, h2 {
+    font-size: 32px;
+  }
+  .bold18-b {
+    font-size: 16px;
+  }
+  .regular18-w {
+    font-size: 16px;
+  }
+  .actor ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .actor ul li {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .guild ul li {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=all.css.map */

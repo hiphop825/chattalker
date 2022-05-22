@@ -1,0 +1,228 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h2{
+    @extend .bold48;
+}
+
+h3{
+    @extend .bold32;
+}
+
+.max-w1085{
+    max-width: 1085px;
+}
+
+// margin
+.mg-auto{
+    margin: 0 auto;
+}
+
+.mg-button16{
+    margin-bottom: 16px;
+}
+.mg-button20{
+    margin-bottom: 20px;
+}
+.mg-button24{
+    margin-bottom: 24px;
+}
+.mg-button30{
+    margin-bottom: 30px;
+}
+.mg-button48{
+    margin-bottom: 48px;
+}
+
+//flex
+.flex{
+    display: flex;
+}
+
+.fd-column{
+    flex-direction: column;
+}
+
+.fw-wrap{
+    flex-wrap: wrap;
+}
+
+.jc-between{
+    justify-content: space-between;
+}
+
+.jc-center{
+    justify-content: center;
+}
+
+.jc-around{
+    justify-content: space-around;
+}
+
+.ai-center{
+    align-items: center;
+}
+
+// position
+.p-relative{
+    position: relative;
+
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+//button
+.button{
+    width: 128px;
+    height: 40px;
+    border-radius: 40px;
+
+}
+
+.bt{
+    background-color: #56C4C5;
+    &:hover{
+        background-color: #fff;
+        border: 1px solid #56c4c5;
+    }
+}
+
+.bttext{
+    line-height: 40px;
+    padding: 5px 0;
+    &:hover{
+        color: #56C4C5;
+
+    }
+}
+
+
+// font
+.regular12{
+    font-family: 'Noto Sans TC';
+    font-weight: 400;
+    font-size: 12px;
+    color: #221e1f;
+    line-height: 17px;
+}
+
+.bold32{
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    font-size: 32px;
+    color: #221e1f;
+    line-height: 46px;
+}
+
+.regular18{
+    font-family: 'Noto Sans TC';
+    font-weight: 400;
+    font-size: 18px;
+    color: #221e1f;
+    line-height: 26px;
+}
+
+.bold18{
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    font-size: 18px;
+    color: #221e1f;
+    line-height: 26px;
+}
+
+.regular16{
+    font-family: 'Noto Sans TC';
+    font-weight: 400;
+    font-size: 16px;
+    color: #221e1f;
+    line-height: 24px;
+}
+
+.regular20{
+    font-family: 'Noto Sans TC';
+    font-weight: 400;
+    font-size: 16px;
+    color: #221e1f;
+    line-height: 29px;
+}
+
+.bold16{
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    font-size: 16px;
+    color: #221e1f;
+    line-height: 24px;
+}
+
+.bold24{
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    font-size: 24px;
+    color: #221e1f;
+    line-height: 35px;
+}
+
+.regular16-g{
+    @extend .regular16;
+    color: #747474;
+}
+
+.bold48{
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    font-size: 48px;
+    color: #221e1f;
+    line-height: 70px;
+}
+
+.bold18-b{
+    @extend .bold18;
+    color: #56c4c5;
+}
+
+.regular18-w{
+    @extend .regular18;
+    color: #ffffff;
+}
+
+.bold16-b{
+    @extend .bold16;
+    color: #56c4c5;
+}
+
+.regular16-w{
+    @extend .regular16;
+    color: #fff;
+}
+
+.color-b{
+    color: #56c4c5;
+}
+
+.block{
+    display: block;
+}
+.ta-center{
+    text-align: center;
+}
+
+.bx-shadow{
+    box-shadow: 0px 2px 10px 0px rgba(#000000,0.08);
+}
+
+.b-radius20{
+    border-radius: 20px;
+}
+
+.b-radius50{
+    border-radius: 50px;
+}
+
+.bgcolor-w{
+    background-color: #fff;
+}
