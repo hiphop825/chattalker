@@ -554,7 +554,6 @@ footer .ft {
   padding: 29px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   margin-bottom: 94px;
-  margin-right: 8px;
   background-color: #fff;
 }
 
@@ -577,6 +576,11 @@ footer .ft {
   padding: 20px;
   background-color: #F5F5F5;
   border-radius: 20px;
+}
+
+.vipcard .candyfather .both .calculate .ca a {
+  display: block;
+  width: 100%;
 }
 
 .vipcard .candyfather .both .submenu a {
@@ -665,8 +669,12 @@ footer .ft {
   .actor ul li {
     width: 50%;
   }
+  .vipcard .candyfather {
+    width: 80%;
+    margin: auto;
+  }
   .vipcard .candyfather .both {
-    width: 100%;
+    width: 80%;
   }
   .vipcard .candyfather .both .submenu {
     display: inline-block;
@@ -711,6 +719,12 @@ footer .ft {
   }
   .card ul li {
     width: 80%;
+  }
+  .vipcard .candyfather {
+    width: 100%;
+  }
+  .vipcard .candyfather .both {
+    width: 100%;
   }
 }
 
