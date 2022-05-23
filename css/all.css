@@ -731,6 +731,9 @@ footer .ft {
   .navbgimg {
     display: none;
   }
+  .banner .bannerbg-img .bannerbgimg {
+    display: block;
+  }
   .platform ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
