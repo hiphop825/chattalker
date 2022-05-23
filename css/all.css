@@ -381,44 +381,6 @@ a {
   z-index: -10;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper .swiper-wrapper {
-  padding-top: 60px;
-}
-
-.swiper .swiper-wrapper .swiper-slide {
-  margin-bottom: 40px;
-  width: 32%;
-}
-
-.swiper .swiper-wrapper .swiper-slide img {
-  top: -60px;
-  left: 16px;
-}
-
-.swiper .swiper-wrapper .swiper-slide p {
-  margin-top: 24px;
-  margin-left: 32px;
-}
-
-.swiper .swiper-wrapper .swiper-slide .opinion {
-  margin: 48px 32px 0;
-  padding-bottom: 24px;
-  border-bottom: 2px solid #DDDDDD;
-}
-
-.swiper .swiper-wrapper .swiper-slide .star {
-  padding: 24px 32px;
-}
-
-.swiper .swiper-wrapper .swiper-slide:nth-child(1) {
-  margin-left: 5px;
-}
-
 .wrap {
   padding: 0 20px;
   max-width: 1366px;
@@ -535,6 +497,44 @@ a {
 .guild ul li P {
   margin-top: 24px;
   margin-bottom: 16px;
+}
+
+.card .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.card .swiper .swiper-wrapper {
+  padding-top: 60px;
+}
+
+.card .swiper .swiper-wrapper .swiper-slide {
+  margin-bottom: 40px;
+  width: 32%;
+}
+
+.card .swiper .swiper-wrapper .swiper-slide img {
+  top: -60px;
+  left: 16px;
+}
+
+.card .swiper .swiper-wrapper .swiper-slide p {
+  margin-top: 24px;
+  margin-left: 32px;
+}
+
+.card .swiper .swiper-wrapper .swiper-slide .opinion {
+  margin: 48px 32px 0;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #DDDDDD;
+}
+
+.card .swiper .swiper-wrapper .swiper-slide .star {
+  padding: 24px 32px;
+}
+
+.card .swiper .swiper-wrapper .swiper-slide:nth-child(1) {
+  margin-left: 5px;
 }
 
 footer {
