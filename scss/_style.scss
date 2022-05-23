@@ -103,37 +103,10 @@
     }
 }
 
-.card{
-    ul{
-        margin-top: 104px;
-        
-        li{
-            width: 30%;
-            margin-bottom: 100px;
-            img{
-                top: -60px;
-                left: 16px;
-            }
-            p{
-                margin-top: 24px;
-                margin-left: 32px;
-            }
-            .opinion{
-                margin: 48px 32px 0;
-                padding-bottom: 24px;
-                border-bottom: 2px solid #DDDDDD;
-            }
-
-            .star{
-                padding: 24px 32px;
-            }
-        }
-    }
-}
-
 footer{
     background-image: url(../img/bg.png);
     background-position: center;
+    margin-top: 80px;
 
     .ftsummary{
         h3{
@@ -226,36 +199,46 @@ footer{
 
 .question{
     max-width: 904px;
-    ul{
-        li{
+
+    section{
+        details{
             padding: 10px 16px;
+            margin: 10px;
+            text-align: left;
             border: 1px solid rgba(#000,0.08);
 
-            .ans{
-                display: inline;
-                height: 0px;
-                text-align: left;
-
-                a{
-                    height: 0;
-                    display: none;
+            summary{
+                padding: 5px;
+                position: relative;
+                list-style: none;
+                
+                &::after{
+                    content: "+";
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: #56c4c5;
                 }
             }
 
-            &:hover{
-                p{
-                    color: #56c4c5;
+            p{
+                margin-top: 20px;
+                padding: 5px;
+                & + p{
+                    margin-top: 0;
                 }
-                .ans{
-                    display: block;
-                    height: 100px;
-                    padding: 10px 10px 10px 0;
-                    margin: 14px 0;
-                    transition: 2.5s;
-                    a{
-                        display: block;
-                        margin-bottom: 30px;
-                    }
+            }
+
+            & :last-child{
+                margin-bottom: 20px;
+            }
+
+            &[open]{
+                summary{
+                    color: #56c4c5;
+                    border-bottom: 1px solid rgba(#000,0.08);
                 }
             }
         }

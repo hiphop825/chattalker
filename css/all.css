@@ -208,7 +208,7 @@ a {
 .regular20 {
   font-family: 'Noto Sans TC';
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   color: #221e1f;
   line-height: 29px;
 }
@@ -263,6 +263,10 @@ a {
 
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .ta-center {
@@ -375,6 +379,44 @@ a {
   background-color: #F7F9FD;
   border-radius: 0 0 0 300px;
   z-index: -10;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper .swiper-wrapper {
+  padding-top: 60px;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+  margin-bottom: 40px;
+  width: 32%;
+}
+
+.swiper .swiper-wrapper .swiper-slide img {
+  top: -60px;
+  left: 16px;
+}
+
+.swiper .swiper-wrapper .swiper-slide p {
+  margin-top: 24px;
+  margin-left: 32px;
+}
+
+.swiper .swiper-wrapper .swiper-slide .opinion {
+  margin: 48px 32px 0;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #DDDDDD;
+}
+
+.swiper .swiper-wrapper .swiper-slide .star {
+  padding: 24px 32px;
+}
+
+.swiper .swiper-wrapper .swiper-slide:nth-child(1) {
+  margin-left: 5px;
 }
 
 .wrap {
@@ -495,38 +537,10 @@ a {
   margin-bottom: 16px;
 }
 
-.card ul {
-  margin-top: 104px;
-}
-
-.card ul li {
-  width: 30%;
-  margin-bottom: 100px;
-}
-
-.card ul li img {
-  top: -60px;
-  left: 16px;
-}
-
-.card ul li p {
-  margin-top: 24px;
-  margin-left: 32px;
-}
-
-.card ul li .opinion {
-  margin: 48px 32px 0;
-  padding-bottom: 24px;
-  border-bottom: 2px solid #DDDDDD;
-}
-
-.card ul li .star {
-  padding: 24px 32px;
-}
-
 footer {
   background-image: url(../img/bg.png);
   background-position: center;
+  margin-top: 80px;
 }
 
 footer .ftsummary h3 {
@@ -606,38 +620,45 @@ footer .ft {
   max-width: 904px;
 }
 
-.question ul li {
+.question section details {
   padding: 10px 16px;
+  margin: 10px;
+  text-align: left;
   border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.question ul li .ans {
-  display: inline;
-  height: 0px;
-  text-align: left;
+.question section details summary {
+  padding: 5px;
+  position: relative;
+  list-style: none;
 }
 
-.question ul li .ans a {
-  height: 0;
-  display: none;
-}
-
-.question ul li:hover p {
+.question section details summary::after {
+  content: "+";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 24px;
+  font-weight: bold;
   color: #56c4c5;
 }
 
-.question ul li:hover .ans {
-  display: block;
-  height: 100px;
-  padding: 10px 10px 10px 0;
-  margin: 14px 0;
-  -webkit-transition: 2.5s;
-  transition: 2.5s;
+.question section details p {
+  margin-top: 20px;
+  padding: 5px;
 }
 
-.question ul li:hover .ans a {
-  display: block;
-  margin-bottom: 30px;
+.question section details p + p {
+  margin-top: 0;
+}
+
+.question section details :last-child {
+  margin-bottom: 20px;
+}
+
+.question section details[open] summary {
+  color: #56c4c5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 @media screen and (max-width: 1280px) {
@@ -667,7 +688,10 @@ footer .ft {
 
 @media screen and (max-width: 980px) {
   .actor ul li {
-    width: 50%;
+    width: 40%;
+  }
+  .guild ul li {
+    width: 40%;
   }
   .vipcard .candyfather {
     width: 80%;
@@ -701,11 +725,8 @@ footer .ft {
   .platform ul li {
     width: 80%;
   }
-  .guild .button {
-    margin: auto;
-  }
-  .guild ul li {
-    width: 100%;
+  .actor ul li {
+    width: 45%;
   }
   .card ul {
     -webkit-box-orient: vertical;
@@ -719,6 +740,9 @@ footer .ft {
   }
   .card ul li {
     width: 80%;
+  }
+  .swiper .swiper-wrapper .swiper-slide {
+    width: 50%;
   }
   .vipcard .candyfather {
     width: 100%;
@@ -771,6 +795,22 @@ footer .ft {
   }
   .actor ul li {
     width: 80%;
+  }
+  .guild ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .guild ul li {
+    width: 80%;
+  }
+  .swiper .swiper-wrapper .swiper-slide {
+    width: 100%;
   }
 }
 

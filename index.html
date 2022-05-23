@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="navbgimg"></div>
@@ -104,25 +106,33 @@
             </div>
             <ul class="flex fw-wrap">
                 <li class="bx-shadow b-radius20 bgcolor-w">
-                    <img class="bx-shadow b-radius50" src="img/target.png" alt="">
+                    <div class="inline-block bx-shadow b-radius50">
+                        <img src="img/target.png" alt="">
+                    </div>
                     <p class="bold18">無敵轉換術</p>
                     <a class="block regular16">精準掌握客群來源</a>
                     <a class="block regular16">分析用戶轉化流程</a>
                 </li>
                 <li class="bx-shadow b-radius20 bgcolor-w">
-                    <img class="bx-shadow b-radius50" src="img/idea.png" alt="">
+                    <div class="inline-block bx-shadow b-radius50">
+                        <img src="img/idea.png" alt="">
+                    </div>
                     <p class="bold18">聊天機器人</p>
                     <a class="block regular16">66款聊天機器人模組</a>
                     <a class="block regular16">自由設計聊天流程</a>
                 </li>
                 <li class="bx-shadow b-radius20 bgcolor-w">
-                    <img class="bx-shadow b-radius50" src="img/chat.png" alt="">
+                    <div class="inline-block bx-shadow b-radius50">
+                        <img src="img/chat.png" alt="">
+                    </div>
                     <p class="bold18">一站式訊息中心</p>
                     <a class="block regular16">整合Messenger、LINE</a>
                     <a class="block regular16">和IG三大平台訊息</a>
                 </li>
                 <li class="bx-shadow b-radius20 bgcolor-w">
-                    <img class="bx-shadow b-radius50" src="img/chat (1).png" alt="">
+                    <div class="inline-block bx-shadow b-radius50">
+                        <img src="img/chat (1).png" alt="">
+                    </div>
                     <p class="bold18">群發訊息</p>
                     <a class="block regular16">自由選定特定受眾 </a>
                     <a class="block regular16">精準推送群發訊息</a>
@@ -136,48 +146,63 @@
 
         <div class="card max-w1085 mg-auto">
             <h3 class="mg-button48 ta-center">好評如潮</h3>
-            <ul class="flex fw-wrap jc-around"> 
-                <li class="bx-shadow p-relative b-radius20 bgcolor-w">
-                    <img class="block p-absolute" src="img/1.png" alt="">
-                    <a class="opinion block regular16">原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</a>
-                    <p class="bold16">清心寡慾設計公司</p>
-                    <div class="star flex fw-wrap jc-between">
-                        <a class="mg-button16 regular16">Lina 執行長</a>
-                        <a>⭐⭐⭐⭐⭐</a>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex fd-column bx-shadow p-relative b-radius20 bgcolor-w">
+                        <img class="block p-absolute" src="img/1.png" alt="">
+                        <a class="opinion block regular16">原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</a>
+                        <p class="bold16">清心寡慾設計公司</p>
+                        <div class="star flex fw-wrap jc-between ai-center ">
+                            <a class="mg-button16 regular16 ">Lina 執行長</a>
+                            <a class="mg-button16 regular16">⭐⭐⭐⭐⭐</a>
+                        </div>
                     </div>
-                </li>
-                <li class="bx-shadow p-relative b-radius20 bgcolor-w">
-                    <img class="block p-absolute" src="img/2.png" alt="">
-                    <a class="opinion block regular16">團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</a>
-                    <p class="bold16">subwhat 行銷公司</p>
-                    <div class="star flex fw-wrap jc-between">
-                        <a class="mg-button16 regular16">Zoe 活動長</a>
-                        <a>⭐⭐⭐⭐⭐</a>
+                    <div class="swiper-slide flex fd-column bx-shadow p-relative b-radius20 bgcolor-w">
+                        <img class="block p-absolute" src="img/2.png" alt="">
+                        <a class="opinion block regular16">團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</a>
+                        <p class="bold16">subwhat 行銷公司</p>
+                        <div class="star flex fw-wrap jc-between ai-center">
+                            <a class="mg-button16 regular16">Zoe 活動長</a>
+                            <a class="mg-button16 regular16">⭐⭐⭐⭐⭐</a>
+                        </div>
                     </div>
-                </li>
-                <li class="bx-shadow p-relative b-radius20 bgcolor-w">
-                    <img class="block p-absolute" src="img/3.png" alt="">
-                    <a class="opinion block regular16">經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</a>
-                    <p class="bold16">油土伯</p>
-                    <div class="star flex fw-wrap jc-between">                        
-                        <a class="mg-button16 regular16">HowBig</a>
-                        <a>⭐⭐⭐⭐⭐</a>
+                    <div class="swiper-slide flex fd-column bx-shadow p-relative b-radius20 bgcolor-w">
+                        <img class="block p-absolute" src="img/3.png" alt="">
+                        <a class="opinion block regular16">經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</a>
+                        <p class="bold16">油土伯</p>
+                        <div class="star flex fw-wrap jc-between ai-center">                      
+                            <a class="mg-button16 regular16">How Big </a>
+                            <a class="mg-button16 regular16">⭐⭐⭐⭐⭐</a>
+                        </div>
                     </div>
-
-                </li>
-            </ul>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </div>
 
-
     <footer class="p-relative">
-
             <div class="ftsummary">
                 <h3 class="ta-center">\ 美好用戶體驗，從對話開始 /</h3>
                 <p class="button bt ta-center mg-auto"> <a class="block regular16-w bttext" href="vip.htm">方案費用</a></p>
             </div>
             <p class="ft ta-center"> © 2022 chatTalker. All Rights Reserved.</p>
     </footer>
-        
+    
 </body>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: "auto",
+          spaceBetween: 16,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
 </html>
