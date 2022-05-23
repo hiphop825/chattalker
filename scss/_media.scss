@@ -76,6 +76,14 @@
         display: none;
     }
 
+    .banner{
+        .bannerbg-img{
+            .bannerbgimg{
+                display: block;
+            }
+        }
+    }
+
     .platform{
         @include column-center;
     }
