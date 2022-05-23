@@ -89,16 +89,14 @@
 
     .card{
         @include column-center;
-    }
-
-    .swiper { 
-        .swiper-wrapper{
-            .swiper-slide {
-                width: 50%;
+        .swiper { 
+            .swiper-wrapper{
+                .swiper-slide {
+                    width: 50%;
+                }
             }
-        }
-    }    
-
+        }   
+    } 
 
     .vipcard{
         .candyfather{
@@ -159,13 +157,16 @@
         @include column-center
     }
 
-    .swiper { 
-        .swiper-wrapper{
-            .swiper-slide {
-                width: 100%;
+    .card{
+        .swiper { 
+            .swiper-wrapper{
+                .swiper-slide {
+                    width: 100%;
+                }
             }
-        }
-    }    
+        }    
+    }
+
 }
 
 @media screen and (max-width: 375px) {
